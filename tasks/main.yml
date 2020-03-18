@@ -1,6 +1,6 @@
 ---
   - name: Install bitlbee package
-    apt: pkg=bitlbee state=installed
+    apt: pkg=bitlbee-libpurple state=installed
 
   - name: Create bitlbee config directory
     file: path=/etc/bitlbee state=directory owner=root group=root mode=0755
@@ -27,4 +27,3 @@
 
   - name: Run bitlbee service
     service: name=bitlbee enabled=yes state=started
-
