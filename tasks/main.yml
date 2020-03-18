@@ -1,5 +1,8 @@
 ---
-  - name: Install bitlbee package
+  - name: Remove bitlbee package if exists
+    apt: pkg=bitlbee state=absent
+
+    - name: Install bitlbee-libpurple package
     apt: pkg=bitlbee-libpurple state=installed
 
   - name: Create bitlbee config directory
