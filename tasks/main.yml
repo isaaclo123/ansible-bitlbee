@@ -3,7 +3,7 @@
     apt: pkg=bitlbee state=absent
 
   - name: Install bitlbee-libpurple package
-    apt: pkg=bitlbee-libpurple state=installed
+    apt: pkg=bitlbee-libpurple state=latest
 
   - name: Create bitlbee config directory
     file: path=/etc/bitlbee state=directory owner=root group=root mode=0755
